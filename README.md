@@ -1,5 +1,4 @@
-2021555008
-Esra İclal Boğar
+
 # MultiChat Project
 
 `MultiChat` is a feature-rich chat server and client project built with Python. It started as a simple multi-user chat room and grew to include a graphical user interface (GUI), private messaging, and real-time web monitoring tools.
