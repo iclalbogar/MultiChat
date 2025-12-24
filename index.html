@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MultiChat Web Monitor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+            margin: 0;
+            padding: 20px;
+        }
+        #chat-container {
+            width: 80%;
+            max-width: 900px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #1877f2;
+            border-bottom: 1px solid #dddfe2;
+            padding-bottom: 15px;
+            margin-top: 0;
+            padding-top: 15px;
+        }
+        /* This is the main log window */
+        #chat-log {
+            height: 60vh;
+            overflow-y: scroll;
+            padding: 20px;
+            border-bottom: 1px solid #dddfe2;
+            background-color: #fdfdfd;
+        }
+        /* Styling for each individual message */
+        .message {
+            padding: 8px 12px;
+            margin-bottom: 8px;
+            border-radius: 18px;
+            line-height: 1.4;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+        /* System messages (joins, leaves) */
+        .message.system {
+            background-color: #e7f3ff;
+            color: #0058b3;
+            text-align: center;
+            font-style: italic;
+            font-size: 0.9em;
+            max-width: 100%;
+        }
+        /* Public chat messages */
+        .message.public {
+            background-color: #f0f2f5;
+            color: #050505;
+            align-self: flex-start;
+        }
+        /* Private message notifications */
+        .message.private {
+            background-color: #fff0f0;
+            color: #c92a2a;
+            font-style: italic;
+            font-size: 0.9em;
+            align-self: flex-start;
+        }
+        /* The connection status text at the top */
+        #status {
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .status-connected { color: #31a24c; }
+        .status-disconnected { color: #fa383e; }
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <h1>MultiChat Web Monitor</h1>
+        <div id="status" class="status-disconnected">Disconnected</div>
+        <h2>Live Message Feed</h2>
+        <div id="chat-log">
+            <div class="message system">Connecting to WebSocket server...</div>
+        </div>
+    </div>
+
+    <script>
+        // Wait until the HTML page is fully loaded before running the script.
+        document.addEventListener("DOMContentLoaded", () => {
+            
+            // Get references to the HTML elements we need to change.
+            const chatLog = document.getElementById("chat-log");
+            const statusDiv = document.getElementById("status");
+            
+            // This port must match WEBSOCKET_PORT in your server.py file.
+            const wsPort = 8765; 
+
+            // A helper function to add a new message to the chat log.
+            function addMessageToLog(type, content) {
+                const msgDiv = document.createElement("div");
+                msgDiv.classList.add("message", type); // 'system', 'public', or 'private'
+                msgDiv.textContent = content;
+                chatLog.appendChild(msgDiv);
+                
+                // Automatically scroll to the bottom to see the newest message.
+                chatLog.scrollTop = chatLog.scrollHeight;
+            }
+
+            // This function creates and manages the WebSocket connection.
+            function connect() {
+                // Create a new WebSocket connection to our server.
+                const socket = new WebSocket(`ws://${window.location.hostname}:${wsPort}`);
+
+                // Called when the connection is successfully opened.
+                socket.onopen = () => {
+                    console.log("WebSocket connection established.");
+                    statusDiv.textContent = "Connected to Server";
+                    statusDiv.className = "status-connected";
+                    addMessageToLog("system", "Successfully connected to the live feed.");
+                };
+
+                // Called when a new message is received from the server.
+                socket.onmessage = (event) => {
+                    try {
+                        // The server sends data as a JSON string, so we parse it.
+                        const data = JSON.parse(event.data);
+                        
+                        // Check the 'type' to decide how to style the message.
+                        if (data.type === "system") {
+                            addMessageToLog("system", `[System] ${data.content}`);
+                        } 
+                        else if (data.type === "public") {
+                            addMessageToLog("public", data.content);
+                        } 
+                        else if (data.type === "private") {
+                            // We don't show the content of PMs, just the sender/receiver.
+                            addMessageToLog("private", `[Private Message] (${data.sender} -> ${data.receiver})`);
+                        }
+                        
+                    } catch (e) {
+                        console.error("Could not process incoming message:", event.data, e);
+                        addMessageToLog("system", `[Error] Received corrupt data from server.`);
+                    }
+                };
+
+                // Called when the connection closes (e.g., server stops).
+                socket.onclose = () => {
+                    console.log("WebSocket connection closed.");
+                    statusDiv.textContent = "Disconnected (Retrying...)";
+                    statusDiv.className = "status-disconnected";
+                    addMessageToLog("system", "Connection lost. Reconnecting in 5 seconds...");
+                    
+                    // Automatically try to reconnect after 5 seconds.
+                    setTimeout(connect, 5000);
+                };
+
+                // Called if there is a connection error.
+                socket.onerror = (error) => {
+                    console.error("WebSocket error:", error);
+                    addMessageToLog("system", `[Error] Could not establish connection.`);
+                    socket.close(); // Make sure to close it before retrying.
+                };
+            }
+
+            // Start the first connection attempt.
+            connect();
+        });
+    </script>
+</body>
+</html>

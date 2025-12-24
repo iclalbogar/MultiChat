@@ -1,0 +1,142 @@
+[2025-10-24 18:57:46] CONNECT: asd joined the chat
+[2025-10-24 19:04:55] CONNECT: abc joined the chat
+[2025-10-24 19:11:07] CONNECT: asd joined the chat
+[2025-10-24 19:15:59] CONNECT: asd joined the chat
+[2025-10-24 19:23:39] CONNECT: asd joined the chat
+[2025-10-24 19:27:52] CONNECT: asd joined the chat
+[2025-11-03 21:40:28] CONNECT: asd joined
+[2025-11-03 21:40:34] MESSAGE: asd: adlasld
+[2025-11-03 21:40:42] MESSAGE: asd: sdfdsfs
+[2025-11-03 21:42:10] DISCONNECT: asd left
+[2025-11-03 21:43:55] CONNECT: asd joined
+[2025-11-03 21:44:06] CONNECT: wer joined
+[2025-11-03 21:44:10] MESSAGE: asd: asd
+[2025-11-03 21:44:15] MESSAGE: wer: dsfsd
+[2025-11-03 21:44:20] DISCONNECT: wer left
+[2025-11-03 22:05:43] CONNECT: sdf joined
+[2025-11-03 22:05:47] CONNECT: er joined
+[2025-11-03 22:05:51] MESSAGE: sdf: dss
+[2025-11-03 22:05:55] MESSAGE: er: sdfd
+[2025-11-03 22:05:59] DISCONNECT: sdf left
+[2025-11-04 21:12:33] CONNECT: asd joined
+[2025-11-04 21:12:37] CONNECT: were joined
+[2025-11-04 21:12:41] MESSAGE: asd: dfs
+[2025-11-04 21:12:44] DISCONNECT: asd left
+2025-11-04 22:34:31 - Sunucu 127.0.0.1:12345 Ã¼zerinde baÅŸlatÄ±ldÄ±.
+2025-11-04 22:34:39 - ('127.0.0.1', 37340) adresinden yeni bir baÄŸlantÄ± kabul edildi.
+2025-11-04 22:34:39 - ads sohbete katÄ±ldÄ±.
+2025-11-04 22:34:47 - ('127.0.0.1', 56236) adresinden yeni bir baÄŸlantÄ± kabul edildi.
+2025-11-04 22:34:47 - qweqw sohbete katÄ±ldÄ±.
+2025-11-04 22:35:07 - qweqw 'Exit' komutu gÃ¶nderdi.
+2025-11-04 22:35:07 - qweqw sohbetten ayrÄ±ldÄ±.
+2025-11-04 22:35:16 - ads 'Exit' komutu gÃ¶nderdi.
+2025-11-04 22:35:16 - ads sohbetten ayrÄ±ldÄ±.
+2025-11-04 22:35:21 - ('127.0.0.1', 34044) adresinden yeni bir baÄŸlantÄ± kabul edildi.
+2025-11-04 22:35:21 - ads sohbete katÄ±ldÄ±.
+2025-11-04 22:35:42 - ads 'Exit' komutu gÃ¶nderdi.
+2025-11-04 22:35:42 - ads sohbetten ayrÄ±ldÄ±.
+2025-11-04 22:43:16 - Sunucu 127.0.0.1:12345 Ã¼zerinde baÅŸlatÄ±ldÄ±.
+2025-11-04 22:43:41 - ('127.0.0.1', 54318) adresinden yeni bir baÄŸlantÄ± kabul edildi.
+2025-11-04 22:43:41 - asd sohbete katÄ±ldÄ±.
+2025-11-04 22:43:45 - ('127.0.0.1', 54334) adresinden yeni bir baÄŸlantÄ± kabul edildi.
+2025-11-04 22:43:45 - qwe sohbete katÄ±ldÄ±.
+2025-11-04 22:43:50 - ('127.0.0.1', 54348) adresinden yeni bir baÄŸlantÄ± kabul edildi.
+2025-11-04 22:43:50 - xzc sohbete katÄ±ldÄ±.
+2025-11-04 22:43:56 - Mesaj: asd: asd
+2025-11-04 22:43:59 - Mesaj: qwe: qwe
+2025-11-04 22:44:03 - Mesaj: xzc: zxc
+2025-11-04 22:44:59 - Ã–zel Mesaj: asd -> qwe
+2025-11-04 23:33:34 - Sunucu 127.0.0.1:12345 Ã¼zerinde baÅŸlatÄ±ldÄ±.
+2025-11-04 23:34:12 - ('127.0.0.1', 51930) adresinden yeni bir baÄŸlantÄ± kabul edildi.
+2025-11-04 23:34:12 - sd sohbete katÄ±ldÄ±.
+2025-11-04 23:34:15 - ('127.0.0.1', 51938) adresinden yeni bir baÄŸlantÄ± kabul edildi.
+2025-11-04 23:34:15 - erwe sohbete katÄ±ldÄ±.
+2025-11-04 23:34:21 - Mesaj: sd: a
+2025-11-04 23:34:22 - Mesaj: sd: s
+2025-11-04 23:34:23 - Mesaj: sd: s
+2025-11-04 23:34:23 - Mesaj: sd: d
+2025-11-04 23:34:23 - Mesaj: sd: f
+2025-11-04 23:34:24 - Mesaj: sd: dd
+2025-11-04 23:34:24 - Mesaj: sd: fs
+2025-11-04 23:34:24 - Mesaj: sd: f
+2025-11-04 23:34:25 - Mesaj: sd: f
+2025-11-04 23:34:26 - Mesaj: sd: e
+2025-11-04 23:34:26 - HIZ SINIRI: sd spam nedeniyle baÄŸlantÄ±sÄ± kesildi.
+2025-11-04 23:34:26 - sd sohbetten ayrÄ±ldÄ±.
+2025-11-04 23:34:33 - erwe 'Exit' komutu gÃ¶nderdi.
+2025-11-04 23:34:33 - erwe sohbetten ayrÄ±ldÄ±.
+2025-11-04 23:36:16 - Sunucu 127.0.0.1:12345 Ã¼zerinde baÅŸlatÄ±ldÄ±.
+2025-11-04 23:36:44 - ('127.0.0.1', 50462) adresinden yeni bir baÄŸlantÄ± kabul edildi.
+2025-11-04 23:36:44 - asd sohbete katÄ±ldÄ±.
+2025-11-04 23:37:16 - Mesaj: asd: merhaba
+2025-11-04 23:37:22 - Mesaj: asd: merhaba1
+2025-11-04 23:37:26 - Mesaj: asd: merhaba2
+2025-11-04 23:38:01 - Mesaj: asd: EXITEXIT
+2025-11-05 17:50:19 - Sunucu 127.0.0.1:12345 üzerinde başlatıldı.
+2025-11-05 17:56:19 - Sunucu 127.0.0.1:12345 üzerinde başlatıldı.
+2025-11-05 17:59:13 - ('127.0.0.1', 60343) adresinden yeni bir bağlantı kabul edildi.
+2025-11-05 17:59:13 - asd sohbete katıldı.
+2025-11-05 17:59:31 - ('127.0.0.1', 60350) adresinden yeni bir bağlantı kabul edildi.
+2025-11-05 17:59:31 - qwe sohbete katıldı.
+2025-11-05 18:08:56 - server listening on 127.0.0.1:8765
+2025-11-05 18:09:23 - connection open
+2025-11-05 18:43:56 - connection closed
+2025-11-05 18:44:08 - connection open
+2025-11-05 18:45:41 - ('127.0.0.1', 65517) adresinden yeni bir TCP bağlantısı kabul edildi.
+2025-11-05 18:45:41 - esra sohbete katıldı.
+2025-11-05 18:45:58 - Mesaj: esra: hello
+2025-11-05 18:46:18 - ('127.0.0.1', 65520) adresinden yeni bir TCP bağlantısı kabul edildi.
+2025-11-05 18:46:18 - iclal sohbete katıldı.
+2025-11-05 18:46:46 - Özel Mesaj: esra -> iclal
+2025-11-05 18:46:55 - iclal 'Exit' komutu gönderdi.
+2025-11-05 18:46:55 - iclal sohbetten ayrıldı.
+2025-11-05 18:50:15 - server listening on 127.0.0.1:8765
+2025-11-05 18:50:21 - connection open
+2025-11-05 18:51:45 - ('127.0.0.1', 49193) adresinden yeni bir TCP bağlantısı kabul edildi.
+2025-11-05 18:51:45 - normalkullanıcı sohbete katıldı.
+2025-11-05 18:52:05 - ('127.0.0.1', 49194) adresinden yeni bir TCP bağlantısı kabul edildi.
+2025-11-05 18:52:05 - relaykullanıcı sohbete katıldı.
+2025-11-05 18:53:06 - İstemci relaykullanıcı hatası: [WinError 10054] Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
+2025-11-05 18:53:06 - relaykullanıcı sohbetten ayrıldı.
+2025-11-05 18:53:23 - ('127.0.0.1', 49204) adresinden yeni bir TCP bağlantısı kabul edildi.
+2025-11-05 18:53:23 - *relay sohbete katıldı.
+2025-11-05 18:57:10 - server listening on 127.0.0.1:8765
+2025-11-05 18:57:11 - connection open
+2025-11-05 18:59:02 - ('127.0.0.1', 49235) adresinden yeni bir TCP bağlantısı kabul edildi.
+2025-11-05 18:59:02 - iclal sohbete katıldı.
+2025-11-05 18:59:34 - ('127.0.0.1', 49238) adresinden yeni bir TCP bağlantısı kabul edildi.
+2025-11-05 18:59:34 - *relay sohbete katıldı.
+2025-11-05 18:59:42 - Özel Mesaj: *relay -> iclal
+2025-11-05 18:59:42 - İstemci *relay hatası: [WinError 10054] Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
+2025-11-05 18:59:42 - *relay sohbetten ayrıldı.
+2025-11-05 19:00:00 - ('127.0.0.1', 49241) adresinden yeni bir TCP bağlantısı kabul edildi.
+2025-11-05 19:00:00 - *relay sohbete katıldı.
+2025-11-05 19:00:07 - Özel Mesaj: *relay -> iclal
+2025-11-05 19:00:07 - İstemci *relay hatası: [WinError 10054] Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
+2025-11-05 19:00:07 - *relay sohbetten ayrıldı.
+2025-11-05 19:08:14 - iclal 'Exit' komutu gönderdi.
+2025-11-05 19:08:14 - iclal sohbetten ayrıldı.
+2025-11-05 19:09:03 - server listening on 127.0.0.1:8765
+2025-11-05 19:09:06 - connection open
+2025-11-05 19:09:21 - ('127.0.0.1', 49278) adresinden yeni bir TCP bağlantısı kabul edildi.
+2025-11-05 19:09:21 - asd sohbete katıldı.
+2025-11-05 19:09:32 - ('127.0.0.1', 49280) adresinden yeni bir TCP bağlantısı kabul edildi.
+2025-11-05 19:09:32 - *qwe sohbete katıldı.
+2025-11-05 19:09:39 - Özel Mesaj: *qwe -> asd
+2025-11-05 19:10:06 - Özel Mesaj: *qwe -> asd
+2025-11-05 19:10:11 - Özel Mesaj: asd -> *qwe
+2025-11-05 19:10:24 - *qwe 'Exit' komutu gönderdi.
+2025-11-05 19:10:24 - *qwe sohbetten ayrıldı.
+2025-11-05 19:10:25 - asd 'Exit' komutu gönderdi.
+2025-11-05 19:10:25 - asd sohbetten ayrıldı.
+2025-11-05 19:23:11 - server listening on 127.0.0.1:8765
+2025-11-05 19:23:29 - New TCP connection accepted from ('127.0.0.1', 49379).
+2025-11-05 19:23:29 - asd has joined the chat.
+2025-11-05 19:23:42 - New TCP connection accepted from ('127.0.0.1', 49381).
+2025-11-05 19:23:42 - *asddw has joined the chat.
+2025-11-05 19:23:50 - Message: asd: asdas
+2025-11-05 19:23:54 - Message: *asddw: dsadsa
+2025-11-05 19:23:59 - Private Message: asd -> *asddw
+2025-11-05 19:24:09 - Private Message: *asddw -> asd
+2025-11-05 19:24:21 - asd sent 'Exit' command.
+2025-11-05 19:24:21 - asd has left the chat.
